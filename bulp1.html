@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+  
+  <title>Light Bulb</title>
+  <link rel="stylesheet" href="style.css">
+  
+  </head>
+  
+<body>
+   <h1>One bulb at a time</h1>
+   
+  <div>
+    <img id="Image" onclick="turnOnOff()" src="images/bulpof.jpg">
+    <img id="Image1" onclick="turnOnOff()" src="images/bulpon.jpg">
+  </div>
+	
+   <p style= "color:blue;">Click on the bulb to turn it ON and OFF</p>
+
+    <script type="text/javascript">
+     
+     function turnOnOff() {
+     
+     var image = document.getElementById('Image');
+     var image1 = document.getElementById('Image1');
+    
+     if (image.src.match("bulpon"))
+         image.src = "images/bulpof.jpg";
+     else
+         image.src = "bulpon.jpg";
+   
+     if (image1.src.match("bulpof"))
+         image1.src = "images/bulpon.jpg";
+     else
+         image1.src = "bulpof.jpg";
+    }
+    </script>
+	
+</body>
+  
+</html>
